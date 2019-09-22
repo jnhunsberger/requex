@@ -1,0 +1,13 @@
+version: "3"
+services:
+  backend:
+    image: backend-flask
+    #command: tail -F anything
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: "cyber-backend"
+    volumes:
+        - ../:/app # for watching files
+    ports:
+      - "18082:8082" # if changed, please change port in `frontend/proxy.conf.dev.json`

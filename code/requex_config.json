@@ -1,0 +1,52 @@
+{
+"external_data": [
+    "http://s3-us-west-1.amazonaws.com/umbrella-static/top-1m.csv.zip",
+    "http://osint.bambenekconsulting.com/feeds/dga-feed-high.csv"
+    ],
+"file_map": {
+    "dga": "bambanek",
+    "top": "umbrella"
+    },
+"root_dir": "../",
+"code_dir": "code/",
+"downloads_dir": "data/local/downloads/",
+"staging_dir": "data/local/staging/",
+"models_dir": "data/local/models/",
+"analysis_dir": "data/local/analysis/",
+"excluded_files": [
+    ".DS_Store",
+    "__init__.py"
+    ],
+"google_cloud_storage_archive": "requex_archives_raw",
+"google_auth_json": "code/requex-svc.json",
+"data_formats_raw": [
+    ".csv",
+    ".dat"
+    ],
+"data_formats_merged": [
+    ".csv"
+    ],
+"data_formats_models": [
+    ".h5",
+    ".json",
+    ".pkl"
+    ],
+"archive_formats": [
+    ".zip"
+    ],
+"requex_data_prep_log": "data/local/staging/requex_data_prep.log",
+"multiclass_model": {
+    "model_json": "multiclass_LSTM_2018-11-22_v0.json",
+    "model_H5": "multiclass_LSTM_2018-11-22_v0.h5",
+    "model_tokenizer": "multiclass_LSTM_tokenizer_2018-11-22_v0.pkl",
+    "model_categories": "multiclass_LSTM_categories_2018-11-22_v0.pkl",
+    "model_algorithm": "LSTM"
+    },
+"binary_model": {
+    "model_json": "binary_LSTM_2018-11-22_v0.json",
+    "model_H5": "binary_LSTM_2018-11-22_v0.h5",
+    "model_tokenizer": "binary_LSTM_tokenizer_2018-11-22_v0.pkl",
+    "model_categories": "",
+    "model_algorithm": "LSTM"
+    }
+}

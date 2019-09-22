@@ -1,0 +1,429 @@
+
+/*Standard CSS styles*/
+head {
+    text-align: center;
+    color: white;
+}
+
+html {
+    background: url(code_full.jpg) no-repeat center fixed;
+    background-size: cover;
+    font-family: "Roboto Slab";
+    font-weight: normal;
+    font-size: 18px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html, .main {
+    min-height: 25%;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    font-size: var(--font-size-small);
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-out;
+}
+
+p {
+    margin-top: 15px;
+   
+}
+
+figcaption {
+    font-size: 80%;
+}
+
+section {
+    height: 25%;
+}
+
+a {
+    color: red;
+    font-weight: bold;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+body {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    margin: 50px;
+    color: white;
+    font-family: Orbitron;
+    font-size: 500%;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    margin: 20px;
+    color: white;
+    font-weight: bolder;
+    font-family: Orbitron;
+    font-size: 300%;
+    text-align: center;
+}
+
+h3 {
+    font-family: Orbitron;
+    font-size: 200%;
+    margin-top: 20px;
+}
+
+h4 {
+    font-family: "Roboto Slab";
+    text-align: left;
+    color: white;
+    font-size: 150%;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+h5 {
+    font-size: 200%;
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+}
+
+
+input[type=text] {
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border: 3px solid gray;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 70%;
+}
+
+input:placeholder-shown + label {
+    opacity: 0;
+    transform: translateY(1rem);
+}
+
+img {
+    text-align: center;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+table.center {
+    width:40%; 
+    margin-left:30%; 
+    margin-right:30%;
+}
+
+table, th, td {
+    table-layout: fixed ;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+th {
+    text-align: left;
+}
+
+ul {
+    padding-left: 50px;
+}
+
+ul.a {
+    list-style-type: circle;
+}
+
+/*Custom style classes*/
+.firstpage {
+    height: 100%;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    border-bottom: 2px solid red;
+    z-index: 10;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of buttons on hover */
+.topnav a:hover {
+    background-color: #71c174;
+    color: black;
+}
+
+/* Add a color to the active/current button */
+.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.topnavbtn {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.black-group {
+    margin: 50px 0px;
+    position: relative;
+    /*background: rgba(0, 0, 0, 0.8);*/
+    text-align: left;
+    padding: 60px 16px;
+    min-height: 100%;
+}
+
+.white-group {
+    margin: 50px 0px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.8);
+    text-align: left;
+    padding: 60px 16px;
+    color: black;
+}
+
+.form-group {
+    position: relative;
+    opacity: .75;
+    text-align: center;
+}
+
+.btn {
+    border: 2px solid white;
+    background-color: #009933;
+    color: black;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.container {
+    font-family: "Roboto Slab";
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    background: url(computer_monitor.png) no-repeat center;
+    display: inline-block;
+    position: relative;
+    background-size: contain;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container:after {
+    padding-top: 75%;
+    /* the monitor image is 800x600 so set the padding top % to match 600/800 = .75 */
+    display: block;
+    content: '';
+}
+
+.demomain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.column {
+    float: left;
+}
+
+/* Left and right column */
+.column.side {
+    width: 24%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 52%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.altcolumn {
+    float: left;
+}
+
+
+/* Left and right column */
+    .altcolumn.side {
+        width: 15%;
+    }
+
+/* Middle column */
+    .altcolumn.middle {
+        width: 70%;
+    }
+
+.resultstext {
+    font-weight: bold;
+}
+
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+.metricstable {
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.metricstable td {
+    text-align: left;
+    vertical-align: text-top;
+    padding-right: 25px;
+}
+
+.metricstable td, .metricstable.th {
+    width: 25%;
+}
+
+.twocoltable {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.twocoltable th {
+    font-size: 150%;
+    font-weight: bold;
+}
+
+    .twocoltable td, .twocoltable th {
+        /*width: 400px;*/
+        text-align: left;
+        vertical-align: text-top;
+        padding-left: 30px;
+        width: 50%;
+    }
+
+
+
+.twocoltable td {
+    font-size: 18px;
+}
+
+.btnlarge {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+.btnlarge:hover {
+    background-color: #71c174;
+}
+
+/* Green */
+.success {
+    border-color: white;
+    color: white;
+}
+
+.success:hover {
+    background-color: white;
+	border: 2px solid black;
+    color: black;
+}
+
+.logo {
+    color: red;
+    font-size: 125%;
+    /*font-weight: bolder;*/
+}
+
+@keyframes blinkingText {
+    0% { color: red; }
+
+
+
+    50% { color: transparent; }
+
+
+    100% { color: red; }
+}
+
+.subheading {
+    font-size: 125%;
+    font-weight: bold;
+}
+
+.malicious {
+    font-size: 200%;
+    text-align: center;
+    font-weight: bolder;
+    color: red;
+    animation: blinkingText 1s infinite;
+}
+
+.benign {
+    font-size: 200%;
+    text-align: center;
+    font-weight: bolder;
+    color: #4CAF50
+}
